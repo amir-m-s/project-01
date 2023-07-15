@@ -29,9 +29,9 @@
 
 :root {
     --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --secondary-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --primary-color: #0ef;
 }
 
 
@@ -41,7 +41,8 @@ html {
 
 body {
     direction: rtl;
-
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 a, span {
@@ -55,4 +56,49 @@ a {
 
 ul {
     list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--secondary-bg-color);
+    padding: 1rem;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 2.6rem;
+}
+
+#menu-icon {
+    display: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav > ul {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 3rem;
+}
+
+.header nav > ul > li > a {
+    display: block;
+    padding: 1rem;
+    transition: 0.25s ease-in-out;
+}
+
+.header nav > ul > li > a:hover,
+.header nav > ul > li > a.active {
+    color: var(--primary-color);
 }
