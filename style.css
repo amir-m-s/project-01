@@ -58,6 +58,18 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -102,3 +114,77 @@ ul {
 .header nav > ul > li > a.active {
     color: var(--primary-color);
 }
+
+#home {
+    max-height: 100vh;
+    margin-top: 10rem;
+}
+
+#home h1 {
+    margin-top: 10rem;
+}
+
+#home h3 {
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+#home .btn {
+    display: flex;
+    font-size: 2rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.btn a {
+    position: relative;
+    display: block;
+    background: var(--secondary-bg-color);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn a::before {
+    content: '';
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+
+.btn a:hover::before {
+    width: 100%;
+    color: hsl(0, 0%, 10%);
+}
+
+.flex {
+    display: flex;
+}
+
+.home-img img{
+    max-width: 30vw;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 7.5rem;
+    gap: 2.5rem;
+}
+
+.social-icons a {
+    display: block;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+    box-shadow: 0 0 1.5rem 0 var(--primary-color);
+}
+
