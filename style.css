@@ -263,3 +263,43 @@ section h3 {
 #c::before {
     width: 60%;
 }
+
+.about-img img{
+    max-width: 30vw;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.7rem;
+    margin: 2rem 0 1rem;
+}
+
+form input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="button"] {
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+form textarea {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
