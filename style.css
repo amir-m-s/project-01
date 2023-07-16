@@ -303,3 +303,38 @@ form textarea {
     border-radius: 0.5rem;
     margin-bottom: 2rem;
 }
+
+.footer {
+    padding: 2rem 0;
+    background: var(--secondary-bg-color);
+}
+
+.footer-container {
+    display: flex;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-up {
+    position: absolute;
+    right: 0;
+}
+
+.go-up a {
+    display: block;
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.go-up a:hover {
+    box-shadow: 0 0 1.5rem 0 var(--primary-color);
+}
+
+.copyright {
+    font-size: 1.5rem;
+}
