@@ -124,7 +124,7 @@ p {
 
 section {
     display: flex;
-    height: 100vh;
+    max-height: 100vh;
     padding-top: 10rem;
     align-items: center;
     justify-content: center;
@@ -144,6 +144,7 @@ section h3 {
     font-size: 2rem;
     overflow: hidden;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .btn a {
@@ -304,6 +305,7 @@ form textarea {
 }
 
 .footer {
+    margin: 1rem 0 0;
     padding: 2rem 0;
     background: var(--secondary-bg-color);
 }
