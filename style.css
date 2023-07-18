@@ -79,6 +79,7 @@ p {
 }
 
 .header {
+    display: flex;
     position: fixed;
     top: 0;
     width: 100%;
@@ -348,3 +349,14 @@ input:focus, textarea:focus {
     box-shadow: 0 0 1.5rem 0 var(--primary-color);
 }
 
+@media (max-width: 770px) {
+    .header .container > ul {
+        display: none;
+        font-size: 1.3rem;
+    }
+
+    .header .container #menu-icon {
+        display: block;
+    }
+
+}
