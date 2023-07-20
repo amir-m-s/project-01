@@ -84,8 +84,9 @@ p {
     top: 0;
     width: 100%;
     background: var(--secondary-bg-color);
-    padding: 1rem;
+    padding: 1rem 5%;
     z-index: 100;
+    justify-content: space-between;
 }
 
 .header .logo {
@@ -121,6 +122,12 @@ p {
 
 .header nav > ul > li > a:hover {
     color: var(--primary-color);
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section {
@@ -358,9 +365,19 @@ input:focus, textarea:focus {
     html {
         font-size: 58%;
     }
+
+    .header {
+        flex-direction: column;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
     .header nav > ul {
         display: none;
-        font-size: 1.3rem;
+        padding: 1rem 0;
+        font-size: 1.85rem;
     }
 
     .header .container #menu-icon {
