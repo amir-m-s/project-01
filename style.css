@@ -206,7 +206,7 @@ section h3 {
 }
 
 .skills-box {
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -360,4 +360,45 @@ input:focus, textarea:focus {
         display: block;
     }
 
+    section {
+        height: auto;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .home-img img {
+        max-width: 37vw;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+
+    .education-img img {
+        max-width: 40vw;
+    }
+
+    .content h2 {
+        margin-bottom: 2rem;
+    }
+
+    .skills-box {
+        margin: 1rem 0 0;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .sb-item {
+        width: 40vw;
+    }
+
+    .about-img img {
+        max-width: 40vw;
+    }
 }
