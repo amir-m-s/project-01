@@ -177,6 +177,7 @@ section h3 {
 
 .flex {
     display: flex;
+    align-items: center;
 }
 
 .home-img img{
