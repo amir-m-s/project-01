@@ -180,6 +180,10 @@ section h3 {
     align-items: center;
 }
 
+.content {
+    line-height: 2;
+}
+
 .home-img img{
     max-width: 30vw;
 }
@@ -351,6 +355,9 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 770px) {
+    html {
+        font-size: 58%;
+    }
     .header .container > ul {
         display: none;
         font-size: 1.3rem;
@@ -408,6 +415,9 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 440px) {
+    html {
+        font-size: 53%;
+    }
     .footer-container {
         flex-direction: column;
     }
