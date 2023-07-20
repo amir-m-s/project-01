@@ -10,9 +10,7 @@ function open_menu(event) {
     } else {
         menu.style.display = "none";
         is_menu_open = false;
-    }
-    console.log("Working!");
-    
+    }    
 }
 
 menu_icon.addEventListener("click", open_menu);
