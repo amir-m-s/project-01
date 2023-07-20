@@ -358,7 +358,7 @@ input:focus, textarea:focus {
     html {
         font-size: 58%;
     }
-    .header .container > ul {
+    .header nav > ul {
         display: none;
         font-size: 1.3rem;
     }
