@@ -447,4 +447,8 @@ input:focus, textarea:focus {
         position: static;
         margin-bottom: 2rem;
     }
+
+    .header nav > ul {
+        flex-direction: column;
+    }
 }
