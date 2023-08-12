@@ -1,16 +1,26 @@
 let menu_icon = document.querySelector("#menu-icon");
 let menu = document.querySelector(".header > nav > ul");
 
+menu_icon.addEventListener("click", toggle_menu);
+
 function toggle_menu() {
     let menu_display = getComputedStyle(menu).display;
     if (menu_display == "none") {
         menu.style.animation = "ease-in-out";
-        menu.style.display = "flex";
+        menu.style.display = "block";
     } else {
         menu.style.display = "none";
         tools.style.display = "none";
     }
 }
+
+window.addEventListener("resize", () => {
+    let width = window.innerWidth;
+    if (width > 770)
+        menu.style.display = "flex";
+    else
+        menu.style.display = "none";
+});
 
 // Go to top button variable
 const go_top = document.querySelector(".go-up");
