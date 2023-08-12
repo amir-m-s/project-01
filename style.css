@@ -208,13 +208,12 @@ section h3 {
 
 .social-icons a {
     display: block;
-    border-radius: 50%;
     transition: 0.2s ease-in-out;
 }
 
 .social-icons a:hover {
     color: var(--primary-color);
-    box-shadow: 0 0 3rem 0 var(--primary-color);
+    text-shadow: 0 0 2rem var(--primary-color) ;
 }
 
 .education-img img {
