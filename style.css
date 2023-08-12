@@ -312,6 +312,11 @@ form input {
 form input[type="button"] {
     background: var(--primary-color);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form input[type="button"]:hover {
+    box-shadow: 0 0 1.5rem 0 var(--primary-color);
 }
 
 form textarea {
