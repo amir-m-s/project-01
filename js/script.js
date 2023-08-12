@@ -11,3 +11,10 @@ function toggle_menu() {
         tools.style.display = "none";
     }
 }
+
+// Go to top button variable
+const go_top = document.querySelector(".go-up");
+
+go_top.addEventListener("click", () => {
+    window.scrollTo({top: 0});
+});
