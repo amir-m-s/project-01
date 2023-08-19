@@ -169,6 +169,7 @@ section h3 {
     border-radius: 0.7rem;
     z-index: 1;
     overflow: hidden;
+    transition: 0.4s ease-in-out;
 }
 
 .btn a::before {
@@ -185,9 +186,11 @@ section h3 {
 
 .btn a:hover::before {
     width: 100%;
-    color: hsl(0, 0%, 10%);
 }
 
+.btn a:hover {
+    color: hsl(0, 0%, 10%);
+}
 .flex {
     display: flex;
     align-items: center;
