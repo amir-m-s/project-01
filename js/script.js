@@ -38,17 +38,25 @@ function scroll_handler() {
 
     sections.forEach(section => {
         const distance_top = section.offsetTop;
-        
+
+        // Checks if content is on the viewport
         if (scrolled >= distance_top && scrolled <= distance_top + section.clientHeight) {
+
             nav_links.forEach(link => {
-                if(link.getAttribute("href") === `#${section.getAttribute("id")}`) {
+
+                // Checks if the href = id then active related link and make sure other links doesn't have
+                // active class on them!
+                if(link.getAttribute("href") === `#${section.getAttribute("id")}`)
                     link.classList.add("active");
-                } else {
+                else
                     link.classList.remove("active");
-                }
+
             });
+
         }
+
     });
+
 }
 
 window.addEventListener("scroll", scroll_handler);
