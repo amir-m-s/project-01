@@ -425,12 +425,6 @@ input:focus, textarea:focus {
 
     .skills-box {
         margin: 1rem 0 0;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-    }
-
-    .sb-item {
-        width: 40vw;
     }
 
     .about-img img {
