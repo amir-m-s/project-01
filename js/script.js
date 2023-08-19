@@ -30,51 +30,25 @@ go_top.addEventListener("click", () => {
 });
 
 // Nav items change state script
-const sections = [
-    document.querySelector("#home"),
-    document.querySelector("#education"),
-    document.querySelector("#skills"),
-    document.querySelector("#about"),
-    document.querySelector("#contact"),
-]
+const sections = document.querySelectorAll("section");
+const nav_links = document.querySelectorAll("nav a");
 
-const li = document.querySelectorAll("nav ul li");
+function scroll_handler() {
+    const scrolled = window.scrollY;
 
-window.addEventListener("scroll", () => {
-    for (let i = 0; i < sections.length; i++) {
-        let section_top = sections[i].getBoundingClientRect().top;
-        let sections_bottom = sections[i].getBoundingClientRect().bottom;
+    sections.forEach(section => {
+        const distance_top = section.offsetTop;
         
-        if (section_top <= 0 && sections_bottom >= window.innerHeight){
-            // Add active class on relative nav item
-            li[i].classList.add("active");        
-
-            // Remove other nav items active class
-            for (let j=0; j < li.length; j++){
-                if (j!=i) {
-                    li[j].classList.remove("active");
+        if (scrolled >= distance_top && scrolled <= distance_top + section.clientHeight) {
+            nav_links.forEach(link => {
+                if(link.getAttribute("href") === `#${section.getAttribute("id")}`) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
                 }
-            } 
+            });
         }
-    }
-    
-});
-
-window.onscroll = () => {
-    for (let i = 0; i < sections.length; i++) {
-        let section_top = sections[i].getBoundingClientRect().top;
-        let sections_bottom = sections[i].getBoundingClientRect().bottom;
-        
-        if (section_top <= 0 && sections_bottom >= window.innerHeight){
-            // Add active class on relative nav item
-            li[i].classList.add("active");        
-
-            // Remove other nav items active class
-            for (let j=0; j < li.length; j++){
-                if (j!=i) {
-                    li[j].classList.remove("active");
-                }
-            } 
-        }
-    }
+    });
 }
+
+window.addEventListener("scroll", scroll_handler);
