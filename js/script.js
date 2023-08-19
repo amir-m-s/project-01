@@ -1,3 +1,6 @@
+// To always have active state on navbar
+window.addEventListener("DOMContentLoaded", scroll_handler);
+
 let menu_icon = document.querySelector("#menu-icon");
 let menu = document.querySelector("nav ul");
 
