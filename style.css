@@ -90,7 +90,8 @@ p {
 }
 
 .header .logo {
-    font-size: 2.6rem;
+    font-family: "Poppins", Arial;
+    font-size: 3rem;
 }
 
 .active {
@@ -231,11 +232,17 @@ section h3 {
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .sb-item h4 {
     direction: ltr;
     padding: 0 0 1rem;
+    font-family: inherit;
+}
+
+.sb-item .bar {
+    font-family: inherit;
 }
 
 .bar {
