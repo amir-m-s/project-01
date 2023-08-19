@@ -1,5 +1,5 @@
 let menu_icon = document.querySelector("#menu-icon");
-let menu = document.querySelector("nav > ul");
+let menu = document.querySelector("nav ul");
 
 menu_icon.addEventListener("click", toggle_menu);
 
