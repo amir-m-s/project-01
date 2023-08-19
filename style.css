@@ -221,14 +221,12 @@ section h3 {
 }
 
 .skills-box {
+    display: grid;
     gap: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .sb-item {
-    min-width: 20%;
     background: var(--secondary-bg-color);
     text-align: center;
     padding: 1rem;
