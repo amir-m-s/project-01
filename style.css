@@ -108,6 +108,10 @@ p {
     margin: 0 auto;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .header nav {
     display: flex;
     justify-content: space-between;
